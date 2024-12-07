@@ -1,0 +1,14 @@
+librosa
+tensorflow-gpu
+torch
+pydub
+numpy
+scipy
+librosa
+resampy
+onnxruntime-gpu
+math
+pandas
+seaborn
+matplotlib
+git+https://github.com/m-bain/whisperx.git
