@@ -1,6 +1,6 @@
 import onnxruntime
 
-model_link = "H://Learning Files/Project AI/Aidemo/aidemo/Denoiser/models/denoiser.onnx"
+model_link = r"D:\NCKHSV.2024-2025\Services\aidemo\Denoiser\models\denoiser.onnx"
 provider = "CPUExecutionProvider" if onnxruntime.get_device() == "CPU" else "CUDAExecutionProvider"
 
 opts = onnxruntime.SessionOptions()

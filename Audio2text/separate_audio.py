@@ -48,7 +48,7 @@ def cut_and_save_segments(audio_link: str, diarize_segments, format_type = 'wav'
         
         save_link = save_path + output_file
         segment.export(save_link, format=format_type)
-        print(f"Saved {output_file}")
+        # print(f"Saved {output_file}")
         file_link.append(save_link)
         
     diarize_segments['link'] = file_link

@@ -21,7 +21,8 @@ def denoise_audio(audio_link, output_folder='',session = session, format_type = 
 
     print(f'Ran in {time.time() - start}s')
 
-    output_path = output_folder + audio_link.split('/')[-1].split('.')[0] + '_denoised.' + format_type 
+    # output_path = output_folder + audio_link.split('/')[-1].split('.')[0] + '_denoised.' + format_type 
+    output_path = os.path.join(output_folder, audio_link.split('\\')[-1].split('.')[0] + '_denoised.' + format_type)
     
     scipy.io.wavfile.write(output_path, new_sr, wav_onnx)
 

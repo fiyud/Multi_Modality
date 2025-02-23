@@ -2,7 +2,7 @@ import whisperx
 import torch
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-batch_size = 16
+batch_size = 16 # reduce if low on GPU mem
 compute_type = "int8" # change to "int8" if low on GPU mem (may reduce accuracy)
 
 token = ""

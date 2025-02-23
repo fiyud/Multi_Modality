@@ -3,7 +3,7 @@ from transformers import pipeline
 import torch
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-pipe = pipeline("automatic-speech-recognition", model="H://Learning Files/Project AI/Aidemo/aidemo/S2T", device=device)
+pipe = pipeline("automatic-speech-recognition", model=r"D:\NCKHSV.2024-2025\Services\aidemo\S2T", device=device)
 
 def speech_to_text(audio_link):
     text = pipe(audio_link)
